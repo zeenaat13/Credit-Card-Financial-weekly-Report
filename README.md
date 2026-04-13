@@ -144,7 +144,14 @@ To analyze how customers spend and how revenue changes over time.
 - Ensuring slicers interacted correctly with all visuals required configuration.
 
 ---
+## 📌 Recommendations & Improvements
+- Focus more on high-revenue categories like Bills and Fuel by giving offers and rewards
+- Target high-value customers (educated and working professionals) with personalized services
+-Encourage customers with high credit limits to use more through discounts and EMI options
+-Improve weekly revenue by running regular offers and campaigns
+-Create different strategies for different income and age groups
 
+---
 ## ✅ Conclusion
 
 This project demonstrates an end-to-end Power BI workflow:
