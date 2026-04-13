@@ -1,99 +1,144 @@
 # Credit Card Weekly Financial Report – Power BI Dashboard
 
 ## 📌 Project Overview
-This project analyzes customer demographics and credit card transaction data to build two interactive Power BI dashboards:
+This project focuses on analyzing credit card customer data and transaction behavior to derive meaningful business insights. The goal was to build an interactive Power BI dashboard that helps understand customer demographics, spending patterns, and weekly revenue trends.
 
-- Customer Report Dashboard  
-- Transaction Report Dashboard  
+The project consists of two dashboards:
 
-The dashboards provide insights into customer behavior, spending patterns, and weekly revenue trends using dynamic slicers and DAX measures.
+Customer Report Dashboard
+Transaction Report Dashboard
 
+Through this project, I aimed to simulate a real-world business scenario where data is transformed into actionable insights using Power BI.
 ---
+## 🎯Project Objectives
+The main objectives of this project were:
 
-## 📊 Dashboards
+To analyze customer demographics such as age, income, education, and occupation
+To identify spending patterns across different categories
+To track weekly revenue trends and transaction performance
+To understand credit utilization behavior
+To create an interactive dashboard for better decision-making
 
-### 1. Customer Report
-Key visuals:
-- Total Customers KPI  
-- Average Credit Limit  
-- Average Satisfaction Score  
-- Customers by Gender  
-- Customer Age Distribution  
-- Customers by Income Group  
-- Geographic Distribution (Map)
-
-Slicers:
-- Gender  
-- Age Group  
-- Income Group  
-
-Purpose:
-To understand customer demographics, distribution, and ownership patterns.
-
----
-
-### 2. Transaction Report
-Key visuals:
-- Total Revenue  
-- Total Transactions  
-- Current Week Revenue  
-- Previous Week Revenue  
-- Revenue by Spending Category  
-- Weekly Revenue Trend  
-- Credit Limit vs Utilization (Scatter Plot)
-
-Slicers:
-- Gender  
-- Week Number  
-- Expense Type  
-
-Purpose:
-To analyze spending behavior, revenue trends, and credit utilization.
-
----
+## 🛠️ Tools & Technologies Used
+**Power BI Desktop** – Data visualization and dashboard creation
+**Power Query** – Data cleaning and transformation
+**DAX (Data Analysis Expressions)** – Creating calculated columns and measures
+**GitHub**– Project documentation and version control 
 
 ## 🗂 Dataset
 
 Two datasets were used:
 
 ### CreditCard Table
-Contains transaction-level information such as revenue, credit limits, utilization ratio, expense type, and weekly metrics.
+This table contains transaction-level data, including:
+
+Total transaction amount and volume
+Credit limit and utilization ratio
+Expense type (Bills, Fuel, Travel, etc.)
+Weekly data (Week Number, Week Start Date)
+Interest earned and delinquent accounts
 
 ### Customer Table
-Contains demographic data such as age, gender, income, job, location, and satisfaction score.
+This table contains customer demographic details such as:
 
-A one-to-many relationship was created using `Client_Num`.
+Age, Gender, and Marital Status
+Income and Job type
+Education level
+Location (State, Zipcode)
+Customer satisfaction score
+
+Both tables were connected using Client_Num, forming a customer-level data model.
 
 ---
+## 🔗 Data Modeling & Transformations
+During the data preparation phase:
 
-## ⚙️ Data Modeling & DAX
+Created a one-to-one relationship between the Customer and CreditCard tables
+Built calculated columns such as:
+Age Group
+Income Group
+Numeric Week Number (for proper sorting)
+Handled data type issues (e.g., converting week values from text to numeric)
+Ensured all columns had 100% valid values with no errors or nulls
 
-Derived Columns:
+## 📊 Dashboards
+
+### 1. Customer Report
+<img width="1182" height="671" alt="CreditCard Customer Report" src="https://github.com/user-attachments/assets/bfd73282-a7f4-4e04-9afa-067241f77912" />
+
+
+Key visuals:
+- Customers by State
+- Customers by Marital Status  
+- Customers by Age Group
+- Customers by Education Level
+- Customers by Gender    
+- Customers by Income Group  
+- Customers by Occupation
+
+KPI:
+- Total Customers
+- Average Income
+- Average Customer Age
+- Average Credit Limit
+- Average Satisfaction Score
+
+Slicers:
+- Gender  
 - Age Group  
 - Income Group  
-- Numeric Week Number  
 
-Measures:
+Purpose:
+To understand who the customers are and how they are distributed across different segments.
+
+---
+<img width="1202" height="685" alt="CreditCard Transaction Report" src="https://github.com/user-attachments/assets/07f2606d-60d3-493b-bfd0-4ccd5e319f46" />
+
+### 2. Transaction Report
+Key visuals:
+- Revenue by Spending Category  
+- Weekly Revenue Trend
+- Revenue by Education Level
+- Revenue by Occupation
+- Revenue by Card Category
+- Revenue by Use Method 
+- Credit Limit vs Utilization (Scatter Plot)
+
+KPI:
 - Total Revenue  
 - Total Transactions  
 - Current Week Revenue  
-- Previous Week Revenue  
+- Previous Week Revenue
+- Interest Earned
+- Average utilization
+  
+Slicers:
+- Gender  
+- Week Number  
+- Expense Type  
+
+Purpose:
+To analyze how customers spend and how revenue changes over time.
 
 ---
 
+
+
 ## 🔍 Key Insights
 
-- Certain spending categories contribute significantly more to overall revenue.
-- Weekly revenue shows noticeable fluctuations, indicating periods of higher activity.
+- Spending is highest in categories like Bills and Fuel
+- Revenue shows fluctuations across different weeks
 - Higher credit limits do not always mean higher utilization.
 - Income and age groups show different spending patterns.
+- Educated and working professionals contribute significantly to revenue.
+- Customer demographics strongly influence spending behavior.
 - Car/house ownership correlates with higher average credit limits.
 
 ---
 
 ## ⚠ Challenges Faced
 
-- Week values were stored as text and converted to numeric for trend analysis.
+- Week values were stored as text, causing sorting issues, and converted to numeric for trend analysis.
 - Circular dependency errors during week sorting were resolved using a separate numeric week column.
 - Scatter plot initially showed one point; fixed using legend disaggregation.
 - Ensuring slicers interacted correctly with all visuals required configuration.
@@ -104,19 +149,15 @@ Measures:
 
 This project demonstrates an end-to-end Power BI workflow:
 
-- Data modeling  
+- Data cleaning and transformation
+- Data modeling 
 - DAX calculations  
 - Interactive dashboard design  
 - Business insight generation  
 
 ---
 
-## 🛠 Tools Used
-- Power BI Desktop  
-- DAX  
-- GitHub  
 
----
 
 ## 👤 Author
 Zeenaat Hussain
