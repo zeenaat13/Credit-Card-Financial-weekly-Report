@@ -20,10 +20,10 @@ To understand credit utilization behavior
 To create an interactive dashboard for better decision-making
 
 ## 🛠️ Tools & Technologies Used
-**Power BI Desktop** – Data visualization and dashboard creation
-**Power Query** – Data cleaning and transformation
-**DAX (Data Analysis Expressions)** – Creating calculated columns and measures
-**GitHub**– Project documentation and version control 
+- **Power BI Desktop** – Data visualization and dashboard creation
+- **Power Query** – Data cleaning and transformation
+- **DAX (Data Analysis Expressions)** – Creating calculated columns and measures
+- **GitHub**– Project documentation and version control 
 
 ## 🗂 Dataset
 
