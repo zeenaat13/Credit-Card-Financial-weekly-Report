@@ -5,8 +5,8 @@ This project focuses on analyzing credit card customer data and transaction beha
 
 The project consists of two dashboards:
 
-Customer Report Dashboard
-Transaction Report Dashboard
+- Customer Report Dashboard
+- Transaction Report Dashboard
 
 Through this project, I aimed to simulate a real-world business scenario where data is transformed into actionable insights using Power BI.
 ---
