@@ -64,7 +64,7 @@ Ensured all columns had 100% valid values with no errors or nulls
 ## 📊 Dashboards
 
 ### 1. Customer Report
-<img width="1182" height="671" alt="CreditCard Customer Report" src="https://github.com/user-attachments/assets/bfd73282-a7f4-4e04-9afa-067241f77912" />
+<img width="1182" height="671" alt="CreditCard Customer Report" src="Dashboard Screenshot/Creditcard Customer report.png" />
 
 
 Key visuals:
