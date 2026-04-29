@@ -92,7 +92,7 @@ Purpose:
 To understand who the customers are and how they are distributed across different segments.
 
 ---
-<img width="1202" height="685" alt="CreditCard Transaction Report" src="https://github.com/user-attachments/assets/07f2606d-60d3-493b-bfd0-4ccd5e319f46" />
+<img width="1202" height="685" alt="CreditCard Transaction Report" src="Dashboard Screenshot/Creditcard Transaction Report.png" />
 
 ### 2. Transaction Report
 Key visuals:
